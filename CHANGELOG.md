@@ -38,3 +38,5 @@
 ## Version 0.1.3 (2025-04-18)
 * Bump version to 0.1.2 and add auto-versioning support
 * Bump version to 0.1.2 and update CHANGELOG.md
+## Version 0.1.4 (2025-04-18)
+* Bump version to 0.1.3 and add responsive container with build requirements
