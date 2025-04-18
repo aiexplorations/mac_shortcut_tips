@@ -1,4 +1,4 @@
-use crate::models::{Shortcut, ShortcutCategory};
+use crate::models::ShortcutCategory;
 use iced::{
     widget::{button, column, container, row, text},
     Application, Command, Element, Length, Theme,
@@ -20,10 +20,6 @@ pub enum Message {
 impl Application for MacShortcutTips {
     fn theme(&self) -> Theme {
         Theme::Light
-    }
-
-    fn should_exit(&self) -> bool {
-        false
     }
 
     fn scale_factor(&self) -> f64 {
