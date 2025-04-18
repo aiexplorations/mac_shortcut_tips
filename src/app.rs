@@ -122,13 +122,17 @@ impl Application for MacShortcutTips {
                 column.push(
                     row![
                         container(text(&shortcut.name))
-                            .width(Length::Fixed(120.0)),
+                            .width(Length::Fixed(120.0))
+                            .center_y(),
                         container(text(&shortcut.key_combination))
-                            .width(Length::Fixed(100.0)),
+                            .width(Length::Fixed(100.0))
+                            .center_y(),
                         container(text(&shortcut.description))
                             .width(Length::Fixed(200.0))
+                            .center_y()
                     ]
-                    .spacing(10),
+                    .spacing(10)
+                    .align_items(iced::Alignment::Center),
                 )
             });
 
@@ -138,12 +142,12 @@ impl Application for MacShortcutTips {
             container(content)
                 .width(Length::Fixed(450.0))
                 .height(Length::Fixed(400.0))
-                .padding(10)
+                .center_x()
+                .center_y()
         )
+        .padding(20)
         .width(Length::Fill)
         .height(Length::Fill)
-        .center_x()
-        .center_y()
         .into()
     }
 }
