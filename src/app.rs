@@ -136,12 +136,9 @@ impl Application for MacShortcutTips {
                 )
             });
 
-        let content = column![navigation, shortcuts].spacing(10);
-
-        container(content)
-            .width(Length::Fixed(450.0))
-            .height(Length::Fixed(400.0))
-            .padding(20)
+        container(column![navigation, shortcuts].spacing(10))
+            .width(Length::Fill)
+            .height(Length::Fill)
             .center_x()
             .center_y()
             .into()
