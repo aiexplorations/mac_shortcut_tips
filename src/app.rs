@@ -132,12 +132,19 @@ impl Application for MacShortcutTips {
                 )
             });
 
-        container(column![navigation, shortcuts].spacing(10))
-            .width(Length::Fixed(450.0))
-            .height(Length::Fixed(400.0))
-            .padding(10)
-            .center_x()
-            .center_y()
-            .into()
+        let content = column![navigation, shortcuts].spacing(10);
+
+        container(
+            container(content)
+                .width(Length::Fixed(450.0))
+                .height(Length::Fixed(400.0))
+                .padding(10)
+                .style(iced::theme::Container::Box)
+        )
+        .width(Length::Fill)
+        .height(Length::Fill)
+        .center_x()
+        .center_y()
+        .into()
     }
 }
