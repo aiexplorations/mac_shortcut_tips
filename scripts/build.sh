@@ -1,7 +1,20 @@
 #!/bin/bash
 
-# Get the current version from Cargo.toml
-VERSION=$(grep '^version = ' Cargo.toml | cut -d '"' -f 2)
+# Get and increment version
+CURRENT_VERSION=$(grep '^version = ' Cargo.toml | cut -d '"' -f 2)
+MAJOR=$(echo $CURRENT_VERSION | cut -d. -f1)
+MINOR=$(echo $CURRENT_VERSION | cut -d. -f2)
+PATCH=$(echo $CURRENT_VERSION | cut -d. -f3)
+
+# Increment patch version
+NEW_PATCH=$((PATCH + 1))
+NEW_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
+
+# Update version in Cargo.toml
+sed -i '' "s/^version = \".*\"/version = \"$NEW_VERSION\"/" Cargo.toml
+
+# Use new version
+VERSION=$NEW_VERSION
 
 # Create build directories
 mkdir -p target/dmg
