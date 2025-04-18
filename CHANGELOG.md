@@ -35,3 +35,6 @@
 * Initial setup: Create Mac shortcut tips app with core functionality and UI
 ## Version 0.1.2 (2025-04-18)
 * Bump version to 0.1.1 and update build script with auto-versioning
+## Version 0.1.3 (2025-04-18)
+* Bump version to 0.1.2 and add auto-versioning support
+* Bump version to 0.1.2 and update CHANGELOG.md

@@ -10,12 +10,16 @@ A native macOS application that provides quick access to essential keyboard shor
 - Simple left/right navigation through shortcut categories
 - Clean, minimal interface following macOS design guidelines
 - Categorized shortcuts for different applications and system functions
+- Responsive container design that adapts to content
+- Centered app window with optimized layout
+- Auto-versioning support via build script
 
 ## Requirements
 
 - macOS 10.7 or later
 - Rust 1.70.0 or later
 - Cargo (Rust's package manager)
+- Xcode Command Line Tools (for building from source)
 
 ## Installation
 
