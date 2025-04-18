@@ -33,3 +33,5 @@
 * Fix: Center app window and add container box styling
 * Remove unused imports and update changelog with initial app setup
 * Initial setup: Create Mac shortcut tips app with core functionality and UI
+## Version 0.1.2 (2025-04-18)
+* Bump version to 0.1.1 and update build script with auto-versioning
