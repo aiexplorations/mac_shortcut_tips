@@ -139,7 +139,6 @@ impl Application for MacShortcutTips {
                 .width(Length::Fixed(450.0))
                 .height(Length::Fixed(400.0))
                 .padding(10)
-                .style(iced::theme::Container::Box)
         )
         .width(Length::Fill)
         .height(Length::Fill)
