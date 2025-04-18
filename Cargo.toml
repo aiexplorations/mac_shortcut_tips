@@ -1,6 +1,6 @@
 [package]
 name = "mac_shortcut_tips"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 description = "A native macOS app displaying keyboard shortcuts"
 authors = ["Your Name"]
